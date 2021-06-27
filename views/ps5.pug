@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 Welcome to PS5
+    if zipcode != null
+        p City is: #{zipcode}
+        p Weather Description : #{wx_desc}
