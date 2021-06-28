@@ -1,0 +1,6 @@
+<form (ngSubmit)="getWeatherByZipcode()">
+  Zipcode: <input name="zipcode" [(ngModel)]="zipcode">
+  <button type="submit">Submit</button>
+</form>
+
+<app-result [zipcodes]="zipcodes" [currentZip]="currentZip"></app-result>
